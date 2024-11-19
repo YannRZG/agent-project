@@ -1,0 +1,9 @@
+{
+    "multiplier": [
+        {"build": "name", "bonusMultiplier":"2,20", "perksMultiplier":"2,27"},
+        {"build": "name", "bonusMultiplier":"2,20", "perksMultiplier":"2,27"},
+        {"build": "name", "bonusMultiplier":"2,20", "perksMultiplier":"2,27"},
+        {"build": "name", "bonusMultiplier":"2,20", "perksMultiplier":"2,27"},
+        {"build": "name", "bonusMultiplier":"2,20", "perksMultiplier":"2,27"}
+    ]
+    }

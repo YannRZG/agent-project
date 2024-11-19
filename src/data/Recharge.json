@@ -1,0 +1,12 @@
+{
+    "Recharge": [
+        {"discountTime": 5, "count":0},
+        {"discountTime": 9, "count":1},
+        {"discountTime": 10, "count":3},
+        {"discountTime": 13, "count":1},
+        {"discountTime": 16, "count":0},
+        {"discountTime": 20, "count":0},
+        {"discountTime": 25, "count":0}
+
+    ]
+}

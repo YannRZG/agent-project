@@ -1,0 +1,9 @@
+{
+    "badges": [
+        { "rarity": "Legendary", "id": "SR001", "price": 100000 },
+        { "rarity": "Epic", "id": "SR002", "price": 75000 },
+        { "rarity": "Rare", "id": "SR003", "price": 50000 },
+        { "rarity": "Uncommon", "id": "SR004", "price": 25000 },
+        { "rarity": "Common", "id": "SR005", "price": 10000 }
+    ]
+}
