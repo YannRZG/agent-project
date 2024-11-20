@@ -61,7 +61,7 @@ export default function EditableTable({ initialData }) {
         <thead className="bg-[#1e272e] text-white">
           <tr>
             {columns.map((column, index) => (
-              <th key={index} className="px-4 py-2 text-left">
+              <th key={index} className="px-4 py-2 text-sm text-left">
                 {column}
               </th>
             ))}

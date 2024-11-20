@@ -47,23 +47,23 @@ export default function Collection() {
       <div className="grid grid-cols-2 gap-6">
         <div className="p-4">
           <h2 className="text-xl text-slate-100 font-semibold mb-4">
-            Showrunner Contracts
+            SHOWRUNNER CONTRACTS
           </h2>
           <EditableTable initialData={table1Data} />
         </div>
         <div className="p-4">
           <h2 className="text-xl text-slate-100 font-semibold mb-4">
-            Multiplier & Value Perks Multiplier
+            MULTIPLIER & PERKS
           </h2>
           <EditableTable initialData={table2Data} />
         </div>
         <div className="p-4">
-          <h2 className="text-xl text-slate-100 font-semibold mb-4">Badges</h2>
+          <h2 className="text-xl text-slate-100 font-semibold mb-4">BADGES</h2>
           <EditableTable initialData={table3Data} />
         </div>
         <div className="p-4">
           <h2 className="text-xl text-slate-100 font-semibold mb-4">
-            Recharge Discount
+            RECHARGE DISCOUNT
           </h2>
           <EditableTable initialData={table4Data} />
         </div>
