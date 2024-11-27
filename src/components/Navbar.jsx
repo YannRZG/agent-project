@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import A from "../assets/A.png";
 import agentLogo from "../assets/Agent-logo.png";
-import "../assets/omiage.png";
-import "../assets/time-token.png";
-import "../assets/token2.png";
-import "../assets/token3.png";
+import Omiage from "../assets/omiage.png";
+import TimeToken from "../assets/time-token.png";
+import Token2 from "../assets/token2.png";
+import Token3 from "../assets/token3.png";
 import { FaBell, FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
@@ -39,7 +40,7 @@ const Navbar = () => {
         {/* Logo : logo pour petits écrans et grand logo pour grands écrans */}
         <button onClick={() => navigate("/")}>
         <img
-          src="/src/assets/A.png"
+          src={A}
           alt="logo"
           className="h-8 w-auto lg:hidden" // Logo pour mobile (disparaît sur grands écrans)
         />
@@ -95,7 +96,7 @@ const Navbar = () => {
                   className="flex items-center hover:text-gray-400"
                 >
                   <img
-                    src="/src/assets/time-token.png"
+                    src={TimeToken}
                     alt="Currency1"
                     className="w-4 h-4 mr-1"
                   />
@@ -108,7 +109,7 @@ const Navbar = () => {
                   className="flex items-center hover:text-gray-400"
                 >
                   <img
-                    src="/src/assets/token2.png"
+                    src={Token2}
                     alt="Currency2"
                     className="w-4 h-4 mr-1"
                   />
@@ -121,7 +122,7 @@ const Navbar = () => {
                   className="flex items-center hover:text-gray-400"
                 >
                   <img
-                    src="/src/assets/token3.png"
+                    src={Token3}
                     alt="Currency3"
                     className="w-4 h-4 mr-1"
                   />
@@ -197,7 +198,7 @@ const Navbar = () => {
                     className="flex items-center hover:text-gray-400"
                   >
                     <img
-                      src="/src/assets/time-token.png"
+                      src={TimeToken}
                       alt=""
                       className="w-4 h-4 mr-1"
                     />
@@ -210,7 +211,7 @@ const Navbar = () => {
                     className="flex items-center hover:text-gray-400"
                   >
                     <img
-                      src="/src/assets/token2.png"
+                      src={Token2}
                       alt=""
                       className="w-4 h-4 mr-1"
                     />
@@ -223,7 +224,7 @@ const Navbar = () => {
                     className="flex items-center hover:text-gray-400"
                   >
                     <img
-                      src="/src/assets/token3.png"
+                      src={Token3}
                       alt=""
                       className="w-4 h-4 mr-1"
                     />
@@ -250,7 +251,7 @@ const Navbar = () => {
             <button className="flex justify-center items-center space-x-2 p-2 hover:bg-zinc-700 rounded-full">
               <p className="hidden lg:block text-white text-sm">Omiage</p>
               <img
-                src="/src/assets/omiage.png"
+                src={Omiage}
                 alt="profile"
                 className="w-8 h-8"
               />

@@ -5,6 +5,11 @@ import {
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import Contract from "../assets/contract.png";
+import Logo from "../assets/Logo.png";
+import Tokens from "../assets/Tokens.png";
+import BackgroundUser from "../assets/background_user.png";
+import A from "../assets/A.png";
 
 export default function MainGrid() {
   const navigate = useNavigate();
@@ -20,7 +25,7 @@ export default function MainGrid() {
               {/* Afficher l'image contract.png uniquement sur tablette et mobile */}
               <div className="flex items-center lg:hidden">
                 <img
-                  src="/src/assets/contract.png"
+                  src={Contract}
                   alt="Contract"
                   style={{ height: "58px" }}
                 />
@@ -52,7 +57,7 @@ export default function MainGrid() {
               </h1>
               <div className="flex items-center gap-2">
                 <img
-                  src="/src/assets/Logo.png"
+                  src={Logo}
                   alt=""
                   style={{ height: "10px" }}
                 />
@@ -75,7 +80,7 @@ export default function MainGrid() {
           >
             <div className="relative">
               <img
-                src="/src/assets/Tokens.png"
+                src={Tokens}
                 alt=""
                 className="ml-auto"
                 style={{ height: "100px", width: "auto" }}
@@ -99,7 +104,7 @@ export default function MainGrid() {
             <div className="flex space-x-2">
               <div className="flex items-center">
                 <img
-                  src="/src/assets/background_user.png"
+                  src={BackgroundUser}
                   alt=""
                   style={{ height: "40px", width: "40px" }}
                 />
@@ -179,7 +184,7 @@ export default function MainGrid() {
       {/* Logo */}
       <div className="flex items-center justify-center mt-6 opacity-70">
         <img
-          src="/src/assets/A.png"
+          src={A}
           alt=""
           style={{ height: "100px", width: "auto" }}
         />
