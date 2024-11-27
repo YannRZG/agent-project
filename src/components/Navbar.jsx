@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
-import "../assets/Agent-logo.png";
+import agentLogo from "../assets/Agent-logo.png";
 import "../assets/omiage.png";
 import "../assets/time-token.png";
 import "../assets/token2.png";
@@ -44,7 +44,7 @@ const Navbar = () => {
           className="h-8 w-auto lg:hidden" // Logo pour mobile (disparaît sur grands écrans)
         />
         <img
-          src="/src/assets/Agent-logo.png" // Le logo grand format
+          src={agentLogo} // Le logo grand format
           alt="logo"
           className="hidden lg:block h-10 w-auto" // Logo pour grands écrans (disparaît sur mobile)
         />
