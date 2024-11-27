@@ -246,6 +246,7 @@ const Navbar = () => {
 
           {/* Profile Button */}
           <div className=" lg:flex lg:items-center">
+              <a href="/profile">
             <button className="flex justify-center items-center space-x-2 p-2 hover:bg-zinc-700 rounded-full">
               <p className="hidden lg:block text-white text-sm">Omiage</p>
               <img
@@ -254,6 +255,7 @@ const Navbar = () => {
                 className="w-8 h-8"
               />
             </button>
+              </a>
           </div>
         </div>
       </div>

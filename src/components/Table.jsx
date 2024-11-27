@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const getRarityColor = (rarity) => {
   switch (rarity?.toLowerCase()) {
@@ -30,7 +30,7 @@ const getRarityColor = (rarity) => {
 export default function ReusableTable({ columns, data }) {
   return (
     <table className="table-auto w-full text-left text-white">
-      <thead className="bg-gray-800">
+      <thead className="bg-gray-800 text-sm">
         <tr>
           {columns.map((column, index) => (
             <th
@@ -65,7 +65,7 @@ export default function ReusableTable({ columns, data }) {
                     {row[column.accessor]}
                   </span>
                 ) : (
-                  row[column.accessor]
+                  <span className="text-md">{row[column.accessor]}</span>
                 )}
               </td>
             ))}

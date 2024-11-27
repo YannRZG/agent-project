@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ReusableTable from "../components/Table";
 
 export default function TabsWithTables() {
   const [activeTab, setActiveTab] = useState(0);
-  const [selectedItem, setSelectedItem] = useState("");
 
   const tabs = [
     {
@@ -491,9 +490,6 @@ export default function TabsWithTables() {
     },
   ];
 
-  const handleTabChange = (index) => {
-    setActiveTab(index);
-  };
 
   return (
     <div className="h-auto flex flex-col">
@@ -503,7 +499,7 @@ export default function TabsWithTables() {
         <h1 className="text-3xl font-bold mb-8 text-yellow-400">CALCULATORS</h1>
         <div className="flex flex-col flex-grow">
           {/* Onglets */}
-          <div className="flex border-b-2 border-yellow-300">
+          <div className="flex border-b-2 border-yellow-300 ">
             {tabs.map((tab, index) => (
               <button
                 key={index}

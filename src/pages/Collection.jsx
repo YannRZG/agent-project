@@ -44,7 +44,7 @@ export default function Collection() {
     <div className="p-6 mx-10 rounded-lg bg-zinc-900 ">
       <h1 className="text-3xl font-bold mb-8 text-yellow-400">My Collection</h1>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-6  lg:grid-cols-2">
         <div className="p-4">
           <h2 className="text-xl text-slate-100 font-semibold mb-4">
             SHOWRUNNER CONTRACTS
