@@ -14,7 +14,7 @@ export default function Daily() {
   };
 
   useEffect(() => {
-    fetch("/src/data/daily.json")
+    fetch("/data/daily.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erreur lors du chargement des données");
