@@ -5,11 +5,12 @@ import {
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import Contract from "../assets/contract.png";
-import Logo from "../assets/Logo.png";
-import Tokens from "../assets/Tokens.png";
-import BackgroundUser from "../assets/background_user.png";
-import A from "../assets/A.png";
+import Contract from "../../public/assets/contract.png";
+import Logo from "../../public/assets/Logo.png";
+import Tokens from "../../public/assets/Tokens.png";
+import BackgroundUser from "../../public/assets/background_user.png";
+import A from "../../public/assets/A.png";
+import itemsImage from "../../public/assets/Items.png";
 
 export default function MainGrid() {
   const navigate = useNavigate();
@@ -21,7 +22,12 @@ export default function MainGrid() {
         {/* MY COLLECTION Card (Visible sur tous les écrans) */}
         <div className="bg-zinc-800 rounded-lg text-white flex h-full transform hover:scale-105 transition-transform duration-300 ease-in-out">
           <button
-            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat lg:bg-[url('./assets/items.png')] lg:bg-[length:80%] lg:bg-[top]"
+            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url(${itemsImage})`,
+              backgroundSize: "80%",
+              backgroundPosition: "top",
+            }}
             onClick={() => navigate("/collection")}
           >
             <div className="flex flex-row">
