@@ -25,7 +25,7 @@ export default function MainGrid() {
             className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat"
             style={{
               backgroundImage: `url(${itemsImage})`,
-              backgroundSize: "80%",
+              backgroundSize: "70%",
               backgroundPosition: "top",
             }}
             onClick={() => navigate("/collection")}
