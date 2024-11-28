@@ -48,7 +48,7 @@ export default function MainGrid() {
             onClick={() => navigate("/calculator")}
             className="flex items-end p-4 rounded-lg shadow-md text-white basis-2/3 bg-contain bg-center transform hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{
-              backgroundImage: "url('/src/assets/background-preseason.png')",
+              backgroundImage: "url('/assets/background-preseason.png')",
             }}
           >
             <div>
@@ -132,7 +132,7 @@ export default function MainGrid() {
             onClick={() => navigate("/daily")}
             className="flex items-end flex-1 p-4 rounded-lg bg-zinc-800 shadow-md text-white transform hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{
-              backgroundImage: "url('/src/assets/rewards-pattern1.png')",
+              backgroundImage: "url('/assets/rewards-pattern1.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -158,7 +158,7 @@ export default function MainGrid() {
             onClick={() => navigate("/monthly")}
             className="flex items-end flex-1 p-4 rounded-lg bg-zinc-800 shadow-md text-white transform hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{
-              backgroundImage: "url('/src/assets/rewards-pattern2.png')",
+              backgroundImage: "url('/assets/rewards-pattern2.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
