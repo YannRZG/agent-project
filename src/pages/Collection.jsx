@@ -8,34 +8,34 @@ export default function Collection() {
   const [table3Data, setTable3Data] = useState([]);
   const [table4Data, setTable4Data] = useState([]);
 
-  // Récupération des données JSON pour les tableaux
   useEffect(() => {
-    // Fetch plusieurs fichiers JSON en parallèle
-    Promise.all([
-      fetch("/src/data/ShowRunnerContracts.json"),
-      fetch("/src/data/multiplier.json"),
-      fetch("/src/data/badges.json"),
-      fetch("/src/data/Recharge.json"),
-    ])
-      .then(async (responses) => {
-        // Vérification de la validité des réponses
-        for (const response of responses) {
-          if (!response.ok) {
-            throw new Error("Erreur lors du chargement des données.");
-          }
+    // Définir les chemins publics des fichiers JSON
+    const jsonPaths = [
+      "/data/ShowRunnerContracts.json",
+      "/data/Multiplier.json",
+      "/data/badges.json",
+      "/data/Recharge.json",
+    ];
+
+    // Charger les fichiers JSON en parallèle
+    Promise.all(jsonPaths.map((path) => fetch(path)))
+      .then((responses) => {
+        // Vérifiez si toutes les réponses sont OK
+        if (!responses.every((response) => response.ok)) {
+          throw new Error("Erreur lors de la récupération des données.");
         }
 
-        // Extraire les données JSON pour chaque fichier
-        const data = await Promise.all(responses.map((response) => response.json()));
+        // Parsez les fichiers JSON
+        return Promise.all(responses.map((response) => response.json()));
+      })
+      .then((data) => {
+        console.log("Données récupérées :", data);
 
-        console.log("Données récupérées :", data); // Vérification des données dans la console
-
-        // Mise à jour des états avec les données correspondantes
-        setTable1Data(data[0].showrunnerContracts || []);
-        setTable2Data(data[1].multiplier || []);
-        setTable3Data(data[2].badges || []);
-        setTable4Data(data[3].Recharge || []);
-        // Ajoutez plus de tableData si nécessaire
+        // Mettre à jour les états avec les données récupérées
+        setTable1Data(data[0]?.showrunnerContracts || []);
+        setTable2Data(data[1]?.multiplier || []);
+        setTable3Data(data[2]?.badges || []);
+        setTable4Data(data[3]?.Recharge || []);
       })
       .catch((error) => console.error("Erreur : ", error));
   }, []);
@@ -44,7 +44,7 @@ export default function Collection() {
     <div className="p-6 mx-10 rounded-lg bg-zinc-900 ">
       <h1 className="text-3xl font-bold mb-8 text-yellow-400">My Collection</h1>
 
-      <div className="grid grid-cols-1 gap-6  lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div className="p-4">
           <h2 className="text-xl text-slate-100 font-semibold mb-4">
             SHOWRUNNER CONTRACTS
