@@ -22,7 +22,8 @@ export default function MainGrid() {
         {/* MY COLLECTION Card (Visible sur tous les écrans) */}
         <div className="bg-zinc-800 rounded-lg text-white flex h-full transform hover:scale-105 transition-transform duration-300 ease-in-out">
           <button
-            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat lg:bg-[url('/assets/items.png')] lg:bg-[length:80%] lg:bg-[top]"
+            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat lg:bg-[length:80%] lg:bg-[top]"
+            style={{ backgroundImage: "url('/assets/items.png')" }}
             onClick={() => navigate("/collection")}
           >
             <div className="flex flex-row">
