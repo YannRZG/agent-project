@@ -10,7 +10,6 @@ import Logo from "../assets/Logo.png";
 import Tokens from "../assets/Tokens.png";
 import BackgroundUser from "../assets/background_user.png";
 import A from "../assets/A.png";
-import Preseason from "../assets/background-preseason.png";
 
 export default function MainGrid() {
   const navigate = useNavigate();
@@ -22,8 +21,7 @@ export default function MainGrid() {
         {/* MY COLLECTION Card (Visible sur tous les écrans) */}
         <div className="bg-zinc-800 rounded-lg text-white flex h-full transform hover:scale-105 transition-transform duration-300 ease-in-out">
           <button
-            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat lg:bg-[length:80%] lg:bg-[top]"
-            style={{ backgroundImage: "url('/assets/items.png')" }}
+            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat lg:bg-[url('public/assets/items.png')] lg:bg-[length:80%] lg:bg-[top]"
             onClick={() => navigate("/collection")}
           >
             <div className="flex flex-row">
