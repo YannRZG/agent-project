@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import A from "../../public/assets/A.png";
-import agentLogo from "../../public/assets/Agent-logo.png";
-import Omiage from "../../public/assets/omiage.png";
-import TimeToken from "../../public/assets/time-token.png";
-import Token2 from "../../public/assets/token2.png";
-import Token3 from "../../public/assets/token3.png";
+import A from "/assets/A.png";
+import agentLogo from "/assets/Agent-logo.png";
+import Omiage from "/assets/omiage.png";
+import TimeToken from "/assets/time-token.png";
+import Token2 from "/assets/token2.png";
+import Token3 from "/assets/token3.png";
 import { FaBell, FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {

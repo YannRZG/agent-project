@@ -5,12 +5,13 @@ import {
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import Contract from "../../public/assets/contract.png";
-import Logo from "../../public/assets/Logo.png";
-import Tokens from "../../public/assets/Tokens.png";
-import BackgroundUser from "../../public/assets/background_user.png";
-import A from "../../public/assets/A.png";
-import itemsImage from "../../public/assets/Items.png";
+import Contract from "/assets/contract.png";
+import Logo from "/assets/Logo.png";
+import Tokens from "/assets/Tokens.png";
+import BackgroundUser from "/assets/background_user.png";
+import A from "/assets/A.png";
+import itemsImage from "/assets/Items.png";
+import '../App.css';
 
 export default function MainGrid() {
   const navigate = useNavigate();
@@ -21,30 +22,26 @@ export default function MainGrid() {
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 px-8 min-h-[60vh]">
         {/* MY COLLECTION Card (Visible sur tous les écrans) */}
         <div className="bg-zinc-800 rounded-lg text-white flex h-full transform hover:scale-105 transition-transform duration-300 ease-in-out">
-          <button
-            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url(${itemsImage})`,
-              backgroundSize: "70%",
-              backgroundPosition: "top",
-            }}
-            onClick={() => navigate("/collection")}
-          >
-            <div className="flex flex-row">
-              {/* Afficher l'image contract.png uniquement sur tablette et mobile */}
-              <div className="flex items-center lg:hidden">
-                <img src={Contract} alt="Contract" style={{ height: "58px" }} />
-              </div>
-              <div>
-                <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-yellow-300 text-start">
-                  MY COLLECTION
-                </h1>
-                <p className="text-sm text-start font-light">
-                  SHOWRUNNERS CONTRACTS / BADGES / IN-GAME BUILDS
-                </p>
-              </div>
-            </div>
-          </button>
+        <button
+  className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-image"
+  onClick={() => navigate("/collection")}
+>
+  <div className="flex flex-row">
+    {/* Afficher l'image contract.png uniquement sur tablette et mobile */}
+    <div className="flex items-center lg:hidden">
+      <img src={Contract} alt="Contract" style={{ height: "58px" }} />
+    </div>
+    <div>
+      <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-yellow-300 text-start">
+        MY COLLECTION
+      </h1>
+      <p className="text-sm text-start font-light">
+        SHOWRUNNERS CONTRACTS / BADGES / IN-GAME BUILDS
+      </p>
+    </div>
+  </div>
+</button>
+
         </div>
 
         {/* CALCULATORS Card (Visible uniquement sur grand écran) */}

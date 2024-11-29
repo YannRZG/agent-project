@@ -1,7 +1,7 @@
-import Flex from "../../public/assets/Flex.png";
-import Vector from "../../public/assets/Vector.png";
-import Vector2 from "../../public/assets/Vector2.png";
-import Token4 from "../../public/assets/token4.png";
+import Flex from "/assets/Flex.png";
+import Vector from "/assets/Vector.png";
+import Vector2 from "/assets/Vector2.png";
+import Token4 from "/assets/token4.png";
 export default function DailyCount() {
     return (
       <div className="flex border-2 border-yellow-400 rounded-lg h-full">

@@ -22,3 +22,15 @@ footer {
 }
 
 
+.bg-image {
+  background-image: url('/assets/Items.png');
+  background-size: 70%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) { /* Pour tablette et mobile */
+  .bg-image {
+    background-image: none;
+  }
+}
