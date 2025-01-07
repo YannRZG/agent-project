@@ -9,6 +9,8 @@ import Farming from "./pages/Farming"
 import Daily from "./pages/Daily"
 import Monthly from "./pages/Monthly"
 import Profile from "./pages/Profile"
+import LoginForm from "./components/Login";
+import Register from "./components/Register";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
 
         <main className="flex-grow">
           <Routes>
+            <Route path="/loginform" element={<LoginForm/>} />
+            <Route path="/register" element={<Register />} />
             <Route path="/" element={<MainGrid />} />
             <Route path="/collection" element={<Collection />} />
             <Route path="/calculator" element={<Calculator />} />

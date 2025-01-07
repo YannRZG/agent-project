@@ -11,7 +11,7 @@ import Tokens from "/assets/Tokens.png";
 import BackgroundUser from "/assets/background_user.png";
 import A from "/assets/A.png";
 import itemsImage from "/assets/Items.png";
-import '../App.css';
+import "../App.css";
 
 export default function MainGrid() {
   const navigate = useNavigate();
@@ -21,41 +21,42 @@ export default function MainGrid() {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 px-8 min-h-[60vh]">
         {/* MY COLLECTION Card (Visible sur tous les écrans) */}
-        <div className="bg-zinc-800 rounded-lg text-white flex h-full transform hover:scale-105 transition-transform duration-300 ease-in-out">
-        <button
-  className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-image"
-  onClick={() => navigate("/collection")}
->
-  <div className="flex flex-row">
-    {/* Afficher l'image contract.png uniquement sur tablette et mobile */}
-    <div className="flex items-center lg:hidden">
-      <img src={Contract} alt="Contract" style={{ height: "58px" }} />
-    </div>
-    <div>
-      <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-yellow-300 text-start">
-        MY COLLECTION
-      </h1>
-      <p className="text-sm text-start font-light">
-        SHOWRUNNERS CONTRACTS / BADGES / IN-GAME BUILDS
-      </p>
-    </div>
-  </div>
-</button>
-
+        <div
+          className="bg-zinc-800 bg-image rounded-lg text-white flex h-full transform hover:scale-[102%] transition-transform duration-300 ease-in-out"
+        >
+          <button
+            className="flex items-end h-full w-full p-4 rounded-lg shadow-md bg-image"
+            onClick={() => navigate("/collection")}
+          >
+            <div className="flex flex-row">
+              {/* Afficher l'image contract.png uniquement sur tablette et mobile */}
+              <div className="flex items-center lg:hidden">
+                <img src={Contract} alt="Contract" style={{ height: "58px" }} />
+              </div>
+              <div>
+                <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-yellow-300 text-start">
+                  VESTIARY
+                </h1>
+                <p className="text-sm text-start font-light">
+                  SHOWRUNNERS CONTRACTS / BADGES / IN-GAME BUILDS
+                </p>
+              </div>
+            </div>
+          </button>
         </div>
 
         {/* CALCULATORS Card (Visible uniquement sur grand écran) */}
         <div className="flex flex-col h-full space-y-4 hidden lg:flex">
           <button
             onClick={() => navigate("/calculator")}
-            className="flex items-end p-4 rounded-lg shadow-md text-white basis-2/3 bg-contain bg-center transform hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="flex items-end p-4 rounded-lg shadow-md text-white basis-2/3 bg-zinc-800 bg-contain bg-center transform hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{
               backgroundImage: "url('/assets/background-preseason.png')",
             }}
           >
             <div>
               <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-yellow-300 text-start">
-                CALCULATORS
+                DATA LAB
               </h1>
               <div className="flex items-center gap-2">
                 <img src={Logo} alt="" style={{ height: "10px" }} />
@@ -69,7 +70,7 @@ export default function MainGrid() {
           {/* FARMING Card (Visible uniquement sur grand écran) */}
           <button
             onClick={() => navigate("/farming")}
-            className="bg-zinc-900 p-4 rounded-lg shadow-md text-white basis-1/3 bg-center bg-cover transform hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="bg-zinc-800 p-4 rounded-lg shadow-md text-white basis-1/3 bg-center bg-cover transform hover:scale-105 transition-transform duration-300 ease-in-out"
             style={{
               backgroundImage: "url('/assets/custom-league.png')", // Chemin mis à jour
               backgroundSize: "cover",
@@ -183,7 +184,20 @@ export default function MainGrid() {
       </div>
 
       {/* Logo */}
-      <div className="flex items-center justify-center mt-6 opacity-70">
+      <div className="flex items-center justify-center px-6 mt-6 opacity-70">
+        <button
+          onClick={() => navigate("/monthly")}
+          className="p-4 w-1/3 rounded-lg bg-zinc-800 shadow-md text-white transform hover:scale-105 transition-transform duration-300 ease-in-out"
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-yellow-300 text-center">
+            NEW FEATURE
+          </h1>
+          <div className="flex items-center gap-2">
+            <p className="text-sm text-center font-light">
+              THE DAILY FORTUNES OF YOUR LIFE
+            </p>
+          </div>
+        </button>
         <img src={A} alt="" style={{ height: "100px", width: "auto" }} />
       </div>
     </>

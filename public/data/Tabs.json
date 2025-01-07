@@ -1,0 +1,500 @@
+[
+  {
+    "label": "SLOT",
+    "columns": [
+      { "label": "SLOT", "accessor": "slot", "highlight": false },
+      { "label": "NB FLEX", "accessor": "flex", "highlight": true },
+      { "label": "FLEX COST", "accessor": "cost", "highlight": true },
+      { "label": "BONUS $BFT/SLOT", "accessor": "bonus", "highlight": false },
+      {
+        "label": "NORMAL PART $BFT/BADGE",
+        "accessor": "part",
+        "highlight": false
+      },
+      {
+        "label": "BONUS PART $BFT/BADGE",
+        "accessor": "bonuspart",
+        "highlight": false
+      }
+    ],
+    "data": [
+      {
+        "slot": 1,
+        "flex": 0,
+        "cost": "0",
+        "bonus": "0%",
+        "part": "14",
+        "bonuspart": "0"
+      },
+      {
+        "slot": 2,
+        "flex": 7000,
+        "cost": "$51,98",
+        "bonus": "5%",
+        "part": "14",
+        "bonuspart": "1"
+      },
+      {
+        "slot": 3,
+        "flex": 13000,
+        "cost": "$96,54",
+        "bonus": "10%",
+        "part": "14",
+        "bonuspart": "2"
+      },
+      {
+        "slot": 4,
+        "flex": 20000,
+        "cost": "$148,52",
+        "bonus": "15%",
+        "part": "14",
+        "bonuspart": "4"
+      },
+      {
+        "slot": 5,
+        "flex": 26000,
+        "cost": "193,07",
+        "bonus": "20%",
+        "part": "14",
+        "bonuspart": "6"
+      }
+    ],
+    "additionalColumns": [
+      { "label": "NB SLOT(S)", "accessor": "nbSlot", "highlight": false },
+      { "label": "TOTAL FLEX", "accessor": "totalFlex", "highlight": true },
+      { "label": "TOTAL COST", "accessor": "totalCost", "highlight": true },
+      {
+        "label": "NB TOKENS ROI",
+        "accessor": "nbTokensRoi",
+        "highlight": false
+      },
+      {
+        "label": "NB DAYS ROI (x1,0)",
+        "accessor": "nbDaysRoi1",
+        "highlight": false
+      },
+      {
+        "label": "NB DAYS ROI (x2,0)",
+        "accessor": "nbDaysRoi2",
+        "highlight": false
+      },
+      {
+        "label": "NB DAYS ROI (x3,0)",
+        "accessor": "nbDaysRoi3",
+        "highlight": false
+      }
+    ],
+    "additionalData": [
+      {
+        "nbSlot": 1,
+        "totalFlex": 7000,
+        "totalCost": "$51,98",
+        "nbTokensRoi": 520,
+        "nbDaysRoi1": 6,
+        "nbDaysRoi2": 3,
+        "nbDaysRoi3": 2
+      },
+      {
+        "nbSlot": 2,
+        "totalFlex": 20000,
+        "totalCost": "$96,54",
+        "nbTokensRoi": 1485,
+        "nbDaysRoi1": 15,
+        "nbDaysRoi2": 7,
+        "nbDaysRoi3": 5
+      },
+      {
+        "nbSlot": 3,
+        "totalFlex": 40000,
+        "totalCost": "$148,52",
+        "nbTokensRoi": 2970,
+        "nbDaysRoi1": 30,
+        "nbDaysRoi2": 14,
+        "nbDaysRoi3": 10
+      },
+      {
+        "nbSlot": 4,
+        "totalFlex": 66000,
+        "totalCost": "193,07",
+        "nbTokensRoi": 4901,
+        "nbDaysRoi1": 49,
+        "nbDaysRoi2": 21,
+        "nbDaysRoi3": 17
+      }
+    ]
+  },
+  {
+    "label": "CONTRACT",
+    "columns": [
+      { "label": "RARITY", "accessor": "rarity", "highlight": false },
+      { "label": "ITEM", "accessor": "item", "highlight": false },
+      { "label": "SUPPLY", "accessor": "supply", "highlight": false },
+      { "label": "MAX CHARGES", "accessor": "maxCharges", "highlight": false },
+      { "label": "FLEX/CHARGES", "accessor": "flexCharges", "highlight": true },
+      { "label": "SP.M./CHARGE", "accessor": "spPerCharge", "highlight": true },
+      { "label": "CHARGE COST", "accessor": "chargeCost", "highlight": true },
+      { "label": "TIME TO CHARGE", "accessor": "timeToCharge", "highlight": false
+      }
+    ],
+    "data": [
+      {
+        "rarity": "Common",
+        "item": "Rookie",
+        "supply": 50000,
+        "maxCharges": 1,
+        "flexCharges": 1400,
+        "spPerCharge": 7,
+        "chargeCost": "$10,37",
+        "timeToCharge": "8h00"
+      },
+      {
+        "rarity": "Uncommon",
+        "item": "Initiate",
+        "supply": 35000,
+        "maxCharges": 2,
+        "flexCharges": 2800,
+        "spPerCharge": 14,
+        "chargeCost": "$20,74",
+        "timeToCharge": "7h45"
+      },
+      {
+        "rarity": "Rare",
+        "item": "Encore",
+        "supply": 20000,
+        "maxCharges": 3,
+        "flexCharges": 200,
+        "spPerCharge": 21,
+        "chargeCost": "$31,11",
+        "timeToCharge": "7h30"
+      },
+      {
+        "rarity": "Epic",
+        "item": "Contender",
+        "supply": 10000,
+        "maxCharges": 4,
+        "flexCharges": 200,
+        "spPerCharge": 28,
+        "chargeCost": "$41,47",
+        "timeToCharge": "7h15"
+      },
+      {
+        "rarity": "Legendary",
+        "item": "Challenger",
+        "supply": 5000,
+        "maxCharges": 5,
+        "flexCharges": 200,
+        "spPerCharge": 35,
+        "chargeCost": "$51,83",
+        "timeToCharge": "7h00"
+      },
+      {
+        "rarity": "Mythic",
+        "item": "Veteran",
+        "supply": 2500,
+        "maxCharges": 6,
+        "flexCharges": 200,
+        "spPerCharge": 42,
+        "chargeCost": "$62,19",
+        "timeToCharge": "6h45"
+      },
+      {
+        "rarity": "Exalted",
+        "item": "Champion",
+        "supply": 1000,
+        "maxCharges": 7,
+        "flexCharges": 200,
+        "spPerCharge": 49,
+        "chargeCost": "$72,55",
+        "timeToCharge": "6h30"
+      },
+      {
+        "rarity": "Exotic",
+        "item": "Olympian",
+        "supply": 500,
+        "maxCharges": 8,
+        "flexCharges": 200,
+        "spPerCharge": 56,
+        "chargeCost": "$82,91",
+        "timeToCharge": "6h15"
+      },
+      {
+        "rarity": "Transcendent",
+        "item": "Prodigy",
+        "supply": 100,
+        "maxCharges": 9,
+        "flexCharges": 200,
+        "spPerCharge": 63,
+        "chargeCost": "$93,27",
+        "timeToCharge": "6h00"
+      },
+      {
+        "rarity": "Unique",
+        "item": "MVP",
+        "supply": 1,
+        "maxCharges": 10,
+        "flexCharges": 200,
+        "spPerCharge": 70,
+        "chargeCost": "$103,63",
+        "timeToCharge": "5h45"
+      }
+    ],
+    "columns2": [
+      { "label": "LVL", "accessor": "lvl", "highlight": false, "lighting": false  },
+      { "label": "SpMarksNb", "accessor": "spmarks", "highlight": false, "lighting": false },
+      { "label": "SpMarksCost", "accessor": "spmarkscost", "highlight": false, "lighting": false   },
+      { "label": "TotalCost", "accessor": "totalcost", "highlight": true, "lighting": false }
+    ],
+    "data2": [
+      { "lvl": 1, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 0.65, "highlight": false, "lighting": false  },
+      { "lvl": 2, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 1.3, "highlight": false, "lighting": false  },
+      { "lvl": 3, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 1.95, "highlight": false, "lighting": false  },
+      { "lvl": 4, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 2.6, "highlight": false, "lighting": false  },
+      { "lvl": 5, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 3.25, "highlight": false, "lighting": false  },
+      { "lvl": 6, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 3.9, "highlight": false, "lighting": false  },
+      { "lvl": 7, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 4.55, "highlight": false, "lighting": false  },
+      { "lvl": 8, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 5.2, "highlight": false, "lighting": false  },
+      { "lvl": 9, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 5.85, "highlight": false, "lighting": false  },
+      { "lvl": 10, "spmarks": 420, "spmarkscost": 0.65, "totalcost": 6.5, "highlight": false, "lighting": false  }
+    ]
+  },
+  {
+    "label": "BADGE",
+    "columns": [
+      { "label": "RARITY", "accessor": "rarity", "highlight": false },
+      { "label": "BADGE PRICE", "accessor": "badgePrice", "highlight": false },
+      { "label": "1 ENERGY RECHARGE PRICE", "accessor": "1RechargePrice", "highlight": false },
+      { "label": "FULL RECHARGE PRICE", "accessor": "fullRechargePrice", "highlight": false },
+      { "label": "TOTAL COST", "accessor": "totalCost", "highlight": true },
+      { "label": "MINUTES IN GAME", "accessor": "minuteInGame", "highlight": false },
+      { "label": "NB TOKENS / MAX RECHARGE", "accessor": "nbTokenMaxCharge", "highlight": false },
+      { "label": "TOKEN VALUE $", "accessor": "tokenValue", "highlight": false },
+      { "label": "NB CHARGES ROI", "accessor": "nbChargesRoi", "highlight": false }
+    ],
+    "data": [
+      {
+        "rarity": "Legendary",
+        "badgePrice": 100000,
+        "1RechargePrice": 100000,
+        "fullRechargePrice": 100000,
+        "totalCost": 100000,
+        "minuteInGame": 100000,
+        "nbTokenMaxCharge": 100000,
+        "tokenValue": 100000,
+        "nbChargesRoi": 100000
+      },
+      {
+        "rarity": "Epic",
+        "badgePrice": 75000,
+        "1RechargePrice": 75000,
+        "fullRechargePrice": 75000,
+        "totalCost": 75000,
+        "minuteInGame": 75000,
+        "nbTokenMaxCharge": 75000,
+        "tokenValue": 75000,
+        "nbChargesRoi": 75000
+      },
+      {
+        "rarity": "Rare",
+        "badgePrice": 50000,
+        "1RechargePrice": 50000,
+        "fullRechargePrice": 50000,
+        "totalCost": 50000,
+        "minuteInGame": 50000,
+        "nbTokenMaxCharge": 50000,
+        "tokenValue": 50000,
+        "nbChargesRoi": 50000
+      }
+    ]
+  },
+  {
+    "label": "CRAFT",
+    "columns": [
+      { "label": "RARITY", "accessor": "rarity" },
+      { "label": "SUPPLY", "accessor": "supply" },
+      {
+        "label": "NB PREVIOUS RARITY ITEM",
+        "accessor": "nbPreviousRarityItem"
+      },
+      { "label": "NB $BFT", "accessor": "nbBft" },
+      { "label": "$BFT COST", "accessor": "bftCost" },
+      { "label": "SP.MARKS REWARD", "accessor": "SpMarksReward", "lighting": "true " },
+      { "label": "SP.MARKS PRICE", "accessor": "SpMarksPrice", "lighting": "true " }
+    ],
+    "data": [
+      {
+        "rarity": "Common",
+        "supply": 5000,
+        "nbPreviousRarityItem": 0,
+        "nbBft": 100,
+        "bftCost": 50,
+        "SpMarksReward": 15,
+        "SpMarksPrice": 0.15
+      },
+      {
+        "rarity": "Uncommon",
+        "supply": 4000,
+        "nbPreviousRarityItem": 100,
+        "nbBft": 150,
+        "bftCost": 75,
+        "SpMarksReward": 45,
+        "SpMarksPrice": 0.45
+      },
+      {
+        "rarity": "Rare",
+        "supply": 2000,
+        "nbPreviousRarityItem": 250,
+        "nbBft": 200,
+        "bftCost": 100,
+        "SpMarksReward": 140,
+        "SpMarksPrice": 1.40
+      },
+      {
+        "rarity": "Epic",
+        "supply": 1500,
+        "nbPreviousRarityItem": 400,
+        "nbBft": 300,
+        "bftCost": 150,
+        "SpMarksReward": 760,
+        "SpMarksPrice": 7.60
+      },
+      {
+        "rarity": "Legendary",
+        "supply": 1000,
+        "nbPreviousRarityItem": 600,
+        "nbBft": 500,
+        "bftCost": 200,
+        "SpMarksReward": 2100,
+        "SpMarksPrice": 21.00
+      },
+      {
+        "rarity": "Mythic",
+        "supply": 500,
+        "nbPreviousRarityItem": 800,
+        "nbBft": 600,
+        "bftCost": 300,
+        "SpMarksReward": 7100,
+        "SpMarksPrice": 71.00
+      },
+      {
+        "rarity": "Exalted",
+        "supply": 200,
+        "nbPreviousRarityItem": 1000,
+        "nbBft": 800,
+        "bftCost": 400,
+        "SpMarksReward": 0,
+        "SpMarksPrice": ""
+      },
+      {
+        "rarity": "Exotic",
+        "supply": 100,
+        "nbPreviousRarityItem": 1200,
+        "nbBft": 1000,
+        "bftCost": 500,
+        "SpMarksReward": 0,
+        "SpMarksPrice": ""
+      },
+      {
+        "rarity": "Transcendent",
+        "supply": 50,
+        "nbPreviousRarityItem": 1500,
+        "nbBft": 1500,
+        "bftCost": 600,
+        "SpMarksReward": 0,
+        "SpMarksPrice": ""
+      },
+      {
+        "rarity": "Unique",
+        "supply": 10,
+        "nbPreviousRarityItem": 2000,
+        "nbBft": 2000,
+        "bftCost": 800,
+        "SpMarksReward": 0,
+        "SpMarksPrice": ""
+      }
+    ]
+  },
+  {
+    "label": "PLAYER CYCLE",
+    "columns3": [
+      { "label": "RARITY", "accessor": "rarity" },
+      { "label": "SUPPLY", "accessor": "supply" },
+      { "label": "NB PREVIOUS RARITY ITEM", "accessor": "nbPreviousRarityItem" },
+      { "label": "NB $BFT", "accessor": "nbBft" },
+      { "label": "$BFT COST", "accessor": "bftCost" },
+      { "label": "TIME TO CRAFT", "accessor": "timeToCraft" }
+    ],
+    "data3": [
+      {
+        "rarity": "Common",
+        "supply": 5000,
+        "nbPreviousRarityItem": 0,
+        "nbBft": 100,
+        "bftCost": 50,
+        "timeToCraft": "2 min"
+      },
+      {
+        "rarity": "Uncommon",
+        "supply": 4000,
+        "nbPreviousRarityItem": 100,
+        "nbBft": 150,
+        "bftCost": 75,
+        "timeToCraft": "3 min"
+      },
+      {
+        "rarity": "Rare",
+        "supply": 2000,
+        "nbPreviousRarityItem": 250,
+        "nbBft": 200,
+        "bftCost": 100,
+        "timeToCraft": "5 min"
+      },
+      {
+        "rarity": "Epic",
+        "supply": 1500,
+        "nbPreviousRarityItem": 400,
+        "nbBft": 300,
+        "bftCost": 150,
+        "timeToCraft": "8 min"
+      },
+      {
+        "rarity": "Legendary",
+        "supply": 1000,
+        "nbPreviousRarityItem": 600,
+        "nbBft": 500,
+        "bftCost": 200,
+        "timeToCraft": "10 min"
+      }
+    ],
+
+    "columns4": [
+      { "label": "FULL CHARGE COST", "accessor": "fullChargeCost", "highlight": true },
+      { "label": "$BFT TO SELL", "accessor": "$bftToSell" },
+      { "label": "SP.MARKS TO SELL", "accessor": "spMarksToSell", "warning": true }
+    ],
+    "data4": [
+      {
+        "fullChargeCost": 1000,
+        "$bftToSell": 500,
+        "spMarksToSell": 500
+      }
+
+    ],
+
+    "columns5": [
+      { "label": "SIMULATION", "accessor": "simulation", "warning": true },
+      { "label": "TOTAL $BFT CRAFT COST", "accessor": "total$bftCraftCost", "highlight": "true" },
+      { "label": "NB MINUTES NEEDED", "accessor": "nbMinutesNeeded" },
+      { "label": "TOTAL SP.MARKS", "accessor": "totalSpMarks", "lighting": "true" }
+
+    ],
+
+    "data5": [
+      { "simulation": "case 1", "total$bftCraftCost": 295460 , "nbMinutesNeeded": 5, "totalSpMarks": 500 },
+      { "simulation": "case 2", "total$bftCraftCost": 295460 , "nbMinutesNeeded": 5, "totalSpMarks": 500 }
+    ],
+
+    "columns6": [
+      { "label": ""}
+    ]
+  }
+]

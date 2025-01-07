@@ -100,7 +100,7 @@ const Navbar = () => {
                     alt="Currency1"
                     className="w-4 h-4 mr-1"
                   />
-                  Currency1
+                  $0.012
                 </a>
               </li>
               <li>
@@ -113,7 +113,7 @@ const Navbar = () => {
                     alt="Currency2"
                     className="w-4 h-4 mr-1"
                   />
-                  Currency2
+                  $0.074
                 </a>
               </li>
               <li>
@@ -126,7 +126,7 @@ const Navbar = () => {
                     alt="Currency3"
                     className="w-4 h-4 mr-1"
                   />
-                  Currency3
+                  $0.010
                 </a>
               </li>
             </ul>
@@ -144,7 +144,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex lg:flex-row lg:space-x-6">
           <li>
             <a href="#home" className="hover:text-gray-400">
-              News
+              Economy Map
             </a>
           </li>
           <li className="relative">
@@ -202,7 +202,7 @@ const Navbar = () => {
                       alt=""
                       className="w-4 h-4 mr-1"
                     />
-                    Currency1
+                    $0.012
                   </a>
                 </li>
                 <li>
@@ -215,7 +215,7 @@ const Navbar = () => {
                       alt=""
                       className="w-4 h-4 mr-1"
                     />
-                    Currency2
+                    $0.074
                   </a>
                 </li>
                 <li>
@@ -228,7 +228,7 @@ const Navbar = () => {
                       alt=""
                       className="w-4 h-4 mr-1"
                     />
-                    Currency3
+                    $0.010
                   </a>
                 </li>
               </ul>
